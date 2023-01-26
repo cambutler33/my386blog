@@ -3,7 +3,7 @@ layout: post
 title:  "Blog Ideas"
 author: Cameron Butler
 description: Practice Blog for STAT386
-image: /assets/images/pic1.jfif
+image: /assets/images/pic1.jpg
 ---
 
 
