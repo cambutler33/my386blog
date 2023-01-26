@@ -24,13 +24,13 @@ description: >- # this means to ignore newlines until "baseurl:"
  Change the description so that it describes your blog
 baseurl: "/my386blog" # keep this the same or change it to the name of the repository 
 url: "https://cambutler33.github.io"
-image: /assets/images/image5.jpg
+image: /assets/images/fampic.jpg
 author: Cameron Butler
 copyright: CB
 # Social media users names.  Leave fields blank that you don't want displayed
 twitter_username: 
 github_username: cambutler33
-linkedin_username: 
+linkedin_username: www.linkedin.com/in/cameronbutler3
 dribbble_username: 
 facebook_username:
 flickr_username:
