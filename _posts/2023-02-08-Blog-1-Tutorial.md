@@ -23,17 +23,19 @@ Pandas: This is a powerful library for data analysis that provides easy-to-use d
 With these libraries installed, you're ready to start creating beautiful data visualizations in python! To get started, let's start by importing the libraries into our python script:
 
 
-PIC1
+![Figure](https://raw.githubusercontent.com/cambutler33/my386blog/main/assets/images/blog10.png)
 
 Next, let's load some data into our python script. For this example, we'll be using a dataset of car sales data. You can download this dataset from the UCI machine learning repository. Once you have the dataset, you can load it into python using the following code:
 
-PIC2
+![Figure](https://raw.githubusercontent.com/cambutler33/my386blog/main/assets/images/blog11.png)
 
 With our data loaded, we're now ready to start creating data visualizations! To get started, let's create a simple line graph that shows the total sales of cars over time. To do this, we'll use the following code:
 
+![Figure](https://raw.githubusercontent.com/cambutler33/my386blog/main/assets/images/blog12.png)
+
 This code will create a simple line graph that shows the total sales of cars over time. You can see that data visualization is incredibly simple in python, and that you can quickly create beautiful and meaningful visualizations with just a few lines of code.
 
-PIC3
+![Figure](https://raw.githubusercontent.com/cambutler33/my386blog/main/assets/images/blog13.png)
 
 Now that you know the basics of data visualization in python, it's time to take your skills to the next level! There are many other libraries and techniques available for data visualization in python, and I encourage you to explore them further. With the right tools and techniques, you can create truly stunning and informative data visualizations that will help you communicate your data insights to others.
 
