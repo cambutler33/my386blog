@@ -6,7 +6,7 @@ description: Data Science Tutorial
 image: /assets/images/blog-image.jpg
 ---
 
-##"Unleashing the Power of Python: A Beginner's Guide to Data Visualization"
+**"Unleashing the Power of Python: A Beginner's Guide to Data Visualization"**
 
 Do you want to take your data science skills to the next level? Then it's time to learn how to do data visualizations in python! Data visualization is an incredibly powerful tool that allows you to explore, understand, and communicate data in ways that are both visually appealing and easy to understand. In this tutorial, we'll be taking a deep dive into the world of data visualization in python and showing you how you can get started creating beautiful and meaningful visualizations.
 
