@@ -3,7 +3,7 @@ layout: post
 title:  "Basic Data Visualization in Python"
 author: Cameron Butler
 description: Data Science Tutorial
-image: /assets/images/BLOG1header.jpg
+image: /assets/images/BLOG1header1.jpg
 ---
 
 **Data Science Tutorial: A Guide to Data Visualization in Python**
