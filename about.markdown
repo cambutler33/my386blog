@@ -4,5 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Change this text with information about me and my blog.
-
+STAT386 Blog for Cam Butler. Just a guy in this world of data attempting to share his insights. 

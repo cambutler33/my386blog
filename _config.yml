@@ -21,7 +21,7 @@
 title: Cam's Blog # Make a title for your blog
 email: cameronsbutler33@gmail.com # Add your email 
 description: >- # this means to ignore newlines until "baseurl:"
- Change the description so that it describes your blog
+ Where Data Science meets commentary
 baseurl: "/my386blog" # keep this the same or change it to the name of the repository 
 url: "https://cambutler33.github.io"
 image: /assets/images/fampic.jpg
