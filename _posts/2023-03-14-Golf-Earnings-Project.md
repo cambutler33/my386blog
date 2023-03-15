@@ -27,13 +27,13 @@ I determined that how we collect the data below is aligned with good ethical pra
 
 # Data Collection
 
-##### Step 0: Tools
+### Step 0: Tools
 
 pandas, requests, BeautifulSoup
 
 PICTURE HERE
 
-##### Step 1: Scrape First Year
+### Step 1: Scrape First Year
 
 PICTURE HERE OF 2022 Data FROM ESPN 
 
@@ -46,11 +46,11 @@ CODE
 }
 ```
 
-##### Step 2: Rinse and Repeat 
+### Step 2: Rinse and Repeat 
 
 Update years in url since table structure is same for all the years of interest
 
-##### Step 3: Combine the Datasets
+### Step 3: Combine the Datasets
 
 CODE
 ```
@@ -61,7 +61,7 @@ CODE
 }
 ```
 
-##### Step 4: Drop Columns
+### Step 4: Drop Columns
 
 Cleaning
 
@@ -74,7 +74,7 @@ CODE
 }
 ```
 
-##### Step 5: Output Data to CSV
+### Step 5: Output Data to CSV
 
 CODE
 ```
