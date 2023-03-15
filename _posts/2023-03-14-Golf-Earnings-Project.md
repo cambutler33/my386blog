@@ -23,11 +23,67 @@ https://github.com/cambutler33/Golf_Earnings
 
 # A Note on Ethics
 
-You need to include some information about how you determined that it was ethical / allowable to get the data that you gathered and/or how you implemented good scraping practice.
+I determined that how we collect the data below is aligned with good ethical practices. The data is not private or restricted data. And we do not put a strain on the ESPN site with excessive calls to the website when scraping the data.
 
-# How to
+# Data Collection
 
-Talk here.
+##### Step 0: Tools
+
+pandas, requests, BeautifulSoup
+
+PICTURE HERE
+
+##### Step 1: Scrape First Year
+
+PICTURE HERE OF 2022 Data FROM ESPN 
+
+CODE
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
+
+##### Step 2: Rinse and Repeat 
+
+Update years in url since table structure is same for all the years of interest
+
+##### Step 3: Combine the Datasets
+
+CODE
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
+
+##### Step 4: Drop Columns
+
+Cleaning
+
+CODE
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
+
+##### Step 5: Output Data to CSV
+
+CODE
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
 
 # Conclusion
 
