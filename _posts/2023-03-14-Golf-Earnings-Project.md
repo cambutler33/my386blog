@@ -19,3 +19,5 @@ You should write a blog post that discusses your project.  Please keep in mind t
 5. Have a conclusion that leaves the reader excited for your next blog post where you will do an exploratory data analysis (EDA) of your data.
 
 6. Include a link to your GitHub repo
+https://github.com/cambutler33/Golf_Earnings
+
