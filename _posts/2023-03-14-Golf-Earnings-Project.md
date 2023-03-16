@@ -8,13 +8,15 @@ image: /assets/images/golf.png
 
 # Introduction
 
-Golf is a historic sport with a rich history. In the past few years, golfers on the PGA Tour have been able to make more money than ever thanks to the prize money for winning tournaments. 
+Golf is a sport with a rich history and is loved by many. In the past few years, golfers on the PGA Tour have been able to make more money than ever thanks to the prize money for winning tournaments. 
 
-During the PGA Tour season, the golfers participate in tournaments each week from Thursday through Sunday. Each day, the golfers play the course, which is always 18 holes long. After Friday, players will be cut from the tournament based off of scores, and the remaining golfers compete for the victory and prize money on Saturday and Sunday. 
+Each week during the PGA Tour season, the golfers participate in tournaments from Thursday through Sunday. Each day, the golfers play the course, which is always 18 holes long. After Friday, players will be cut from the tournament based off of scores, and the remaining golfers compete for the victory and prize money on Saturday and Sunday. 
 
-The golfer that wins first place wins the most money with runner-ups earning less. Each tournaments prize money is different, but generally the more popular and important tournaments have a larger purse.  
+The golfer that wins first place wins the most money with runner-ups earning less. Each tournament's prize money is different, but generally the more popular and important tournaments have a larger purse.  
 
 ![Figure](https://github.com/cambutler33/my386blog/raw/main/assets/images/JTpga.jpg)
+
+I want to see what factors contirbute most to golfers winning the most money during a season. Is it their driving ability? Or is it more about putting? I will look at the top 50 golfers for the past 5 complete years of the PGA Tour to see how somebody can win the most money. 
 
 For this project, I use PGA Tour data available from ESPN. In this post, I explain how I scraped the data from ESPN to create the data for the top 50 golfers each year on the PGA Tour for the last 5 full years. 
 
@@ -29,11 +31,15 @@ I determined that how we collect the data below is aligned with good ethical pra
 
 ### Step 0: Tools
 
-For this webscraping process, I used the pandas, requests, and BeautifulSoup packages.
+For this webscraping process, I used the pandas, requests, and BeautifulSoup packages in Python.
 
 ### Step 1: Scrape First Year
 
+Below is how the data looks on ESPN.com. We will pull the top 50 players from each year and then combine them. 
+
 ![Figure](https://github.com/cambutler33/my386blog/raw/main/assets/images/espn.png)
+
+The below code shows I scraped the 2022 data from ESPN. 
 
 ```
 # 2022 data
@@ -109,7 +115,7 @@ data_2022
 
 ### Step 2: Rinse and Repeat 
 
-In order to grab the data for 2021, 2020, 2019, and 2018, all we need to do is the same steps but change the urls. This is possible since the table structure is the same for all the years of interest.
+In order to grab the data for 2021, 2020, 2019, and 2018, all we need to do is the same steps but change the urls. This is possible since the table structure is the same for all the years of interest. We will save each year to its own dataframe.
 
 ```
 url = "https://www.espn.com/golf/stats/player/_/season/2021/"
@@ -162,9 +168,13 @@ dict = {'EARNINGS':'Earnings for Year',
 
 ### Step 5: Output Data to CSV
 
+Last but not least, we will output our pandas dataframe into a csv file for future use and reference.
+
 ```
 df.to_csv('GolfEarnings.csv', index=False)
 ```
+
+And that's it! Thanks to python and various packages, web scraping doesn't have to be scary. 
 
 # Conclusion
 
