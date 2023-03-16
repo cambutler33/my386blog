@@ -29,15 +29,12 @@ I determined that how we collect the data below is aligned with good ethical pra
 
 ### Step 0: Tools
 
-pandas, requests, BeautifulSoup
-
-PICTURE HERE
+For this webscraping process, use the pandas, requests, and BeautifulSoup packages.
 
 ### Step 1: Scrape First Year
 
-PICTURE HERE OF 2022 Data FROM ESPN 
+![Figure](https://github.com/cambutler33/my386blog/raw/main/assets/images/espn.png)
 
-CODE
 ```
 # 2022 data
 # URL of the page to scrape
