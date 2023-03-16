@@ -18,7 +18,7 @@ PICTURE HERE
 
 For this project, I use PGA Tour data available from ESPN. In this post, I explain how I scraped the data from ESPN to create the data for the top 50 golfers each year on the PGA Tour for the last 5 full years. 
 
-Complete code and data can be found in the following Github repo:
+Please note that this blog is not meant to be a comprehensive guide to pulling the data. It is merely a summary. The complete code and data can be found in the following Github repo:
 https://github.com/cambutler33/Golf_Earnings
 
 # A Note on Ethics
@@ -39,50 +39,134 @@ PICTURE HERE OF 2022 Data FROM ESPN
 
 CODE
 ```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
+# 2022 data
+# URL of the page to scrape
+url = "https://www.espn.com/golf/stats/player/_/season/2022/"
+
+# Make a GET request to the URL and store the response
+response = requests.get(url)
+
+# Parse the HTML content of the page using BeautifulSoup
+soup = BeautifulSoup(response.content, 'html.parser')
+
+# Find the table containing the player data
+table = soup.find('table', class_='Table Table--align-right')
+
+# Get the table headers
+headers = [th.text.strip() for th in table.find_all('th')]
+
+# Initialize a list to store the player data
+player_data = []
+
+# Loop through each row in the table (skipping the header row)
+for tr in table.find_all('tr')[1:]:
+    # Get the data for each column in the row
+    tds = tr.find_all('td')
+    # Initialize a dictionary to store the player's data
+    player = {}
+    # Loop through each column and add the data to the dictionary
+    for i in range(len(headers)):
+        player[headers[i]] = tds[i].text.strip()
+    # Add the player's data to the list
+    player_data.append(player)
+    # Stop the loop after 250 players have been scraped
+    if len(player_data) == 250:
+        break
+df22_1 = pd.DataFrame(player_data)
+```
+
+```
+# The URL of the page we want to scrape
+url = "https://www.espn.com/golf/stats/player/_/season/2022/table/general/sort/amount/dir/desc/"
+
+# Send an HTTP request to the URL
+response = requests.get(url)
+
+# Parse the HTML content of the page using BeautifulSoup
+soup = BeautifulSoup(response.content, 'html.parser')
+
+# Find the table containing the player data
+table = soup.find('table')
+
+# Extract the table headers
+headers = []
+for th in table.find_all('th'):
+    headers.append(th.text.strip())
+
+# Extract the player data
+players = []
+for tr in table.find_all('tr')[1:]:
+    player_data = []
+    for td in tr.find_all('td'):
+        player_data.append(td.text.strip())
+    players.append(player_data)
+
+df22_2 = pd.DataFrame(players)
+df22_2.columns = ['Rank', 'Name', 'Age']
+```
+
+```
+data_2022 = df22_2.join(df22_1)
+data_2022
 ```
 
 ### Step 2: Rinse and Repeat 
 
-Update years in url since table structure is same for all the years of interest
+In order to grab the data for 2021, 2020, 2019, and 2018, all we need to do is the same steps but change the urls. This is possible since the table structure is the same for all the years of interest.
+
+```
+url = "https://www.espn.com/golf/stats/player/_/season/2021/"
+url = "https://www.espn.com/golf/stats/player/_/season/2021/table/general/sort/amount/dir/desc/"
+url = "https://www.espn.com/golf/stats/player/_/season/2020/"
+url = "https://www.espn.com/golf/stats/player/_/season/2020/table/general/sort/amount/dir/desc/"
+# and so on...
+```
 
 ### Step 3: Combine the Datasets
 
-CODE
+Once we have the datasets for each year, we need to combine all 5 into 1 dataframe. We can easily do this thanks to pandas. 
+
 ```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
+dfGolf = pd.concat([data_2022, data_2021, data_2020, data_2019, data_2018], ignore_index=True,axis=0)
 ```
 
-### Step 4: Drop Columns
+### Step 4: Drop Columns and Cleaning
 
-Cleaning
+After combining the datasets, we need to drop the columns we don't want, ensure that the data in each column is the correct data type, and rename the columns how we want. We accomplish that with the following:
 
-CODE
 ```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
+dfGolf2 = dfGolf.drop(columns = ['Name', 'Rank', 'CUP', 'Age', 'EVNTS'])
+```
+
+```
+dfGolf2['EARNINGS'] = dfGolf2['EARNINGS'].str.replace('$','')
+dfGolf2['EARNINGS'] = dfGolf2['EARNINGS'].str.replace(',','')
+
+dfGolf3 = dfGolf2.astype({"EARNINGS": int, "RNDS": int, "CUTS":int, "TOP10": int, "WINS": int, "SCORE": float, "DDIS": float, "DACC": float, "GIR": float, 
+                          "PUTTS": float, "SAND": float, "BIRDS": float})
+```
+
+```
+dict = {'EARNINGS':'Earnings for Year',
+ 'RNDS':'Rounds Played',
+ 'CUTS':'Cuts Made',
+ 'TOP10': 'Top 10 Finishes',
+ 'WINS':'Wins',
+ 'SCORE':'Average Score',
+ 'DDIS': 'Average Driving Distance',
+ 'DACC':'Driving Accuracy Percentage',
+ 'GIR':'Greens in Regulation Percentage',
+ 'PUTTS':'Putts Per Hole',
+ 'SAND':'Save Percentage',
+ 'BIRDS':'Birdies Per Round'}
+
+ dfGolf6.rename(columns=dict, inplace=True)
 ```
 
 ### Step 5: Output Data to CSV
 
-CODE
 ```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
+df.to_csv('GolfEarnings.csv', index=False)
 ```
 
 # Conclusion
