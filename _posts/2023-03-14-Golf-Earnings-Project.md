@@ -14,7 +14,7 @@ During the PGA Tour season, the golfers participate in tournaments each week fro
 
 The golfer that wins first place wins the most money with runner-ups earning less. Each tournaments prize money is different, but generally the more popular and important tournaments have a larger purse.  
 
-PICTURE HERE
+![Figure](https://github.com/cambutler33/my386blog/raw/main/assets/images/JTpga.jpg)
 
 For this project, I use PGA Tour data available from ESPN. In this post, I explain how I scraped the data from ESPN to create the data for the top 50 golfers each year on the PGA Tour for the last 5 full years. 
 
