@@ -168,7 +168,7 @@ df.to_csv('GolfEarnings.csv', index=False)
 
 # Conclusion
 
-PICTURE HERE
+![Figure](https://github.com/cambutler33/my386blog/raw/main/assets/images/masters.jpg)
 
 In this post, I showed how to scrape the ESPN site and collect data on the top 50 golfers on the PGA Tour for the last 5 full years. I am particularly interested in what statistics contribute to the most earnings per year on the PGA Tour. In my next post, I will show how exploratory data analysis of this data can help me understand what attributes of one's golf game will help them win the most money on the tour.
 
