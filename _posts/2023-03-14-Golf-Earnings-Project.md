@@ -29,7 +29,7 @@ I determined that how we collect the data below is aligned with good ethical pra
 
 ### Step 0: Tools
 
-For this webscraping process, use the pandas, requests, and BeautifulSoup packages.
+For this webscraping process, I used the pandas, requests, and BeautifulSoup packages.
 
 ### Step 1: Scrape First Year
 
