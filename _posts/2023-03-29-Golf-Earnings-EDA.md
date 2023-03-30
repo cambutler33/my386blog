@@ -47,8 +47,6 @@ Lastly, we call ```df.describe()```. This is a great function to call in order t
 
 # Boxplots and Analyses
 
-5ish - 10ish figures and tables that give the reader a feel for your data with a few sentences of interpretation or explanation 
-
 The following code was used to create a boxplot for each of the independent variables we want to track in this analysis. 
 ```
 fig, axes = plt.subplots(8, 1, figsize=(5, 30))
@@ -71,7 +69,7 @@ Now let's look at these boxplots.
 
 ![Figure](https://raw.githubusercontent.com/cambutler33/my386blog/main/assets/images/GolfPic9.png)
 
-![Figure](https://raw.githubusercontent.com/cambutler33/my386blog/main/assets/images/GolfPic10.png)
+![Figure](https://raw.githubusercontent.com/cambutler33/my386blog/main/assets/images/GolfPic11.png)
 
 # Correlation Matrix
 
@@ -88,7 +86,7 @@ The code for how to create the heatmap is contained in the GitHub repo.
 
 # Conclusion
 
-A conclusion with your main findings and a hint of the story of the data
+To wrap up, we narrowed it down to birdies helping golfers making the most money over other attributes such as average driving distance. 
 
 In the next post, I will wrap up this project and conclude with all of my findings. Thanks for reading! Stay tuned!
 
