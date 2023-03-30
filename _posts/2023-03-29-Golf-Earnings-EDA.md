@@ -67,23 +67,26 @@ Now let's look at these boxplots.
 
 ![Figure](https://raw.githubusercontent.com/cambutler33/my386blog/main/assets/images/GolfPic11.png)
 
+What stands out the most to me in the boxplots is that the golfer with the most wins in a year had 4 wins, and that was an outlier. Even just 1 win can separate golfers by a huge margin on the PGA Tour.
+
+Also, the golfer in this dataset with the highest average score (and this was even an outlier!!) had an average score of 71 per round. This is still 1 under par! That is a little discouraging for the average golfer like myself that a 'bad' golfer in this dataset still shoots under par.
+
+These boxplots are extremely helpful for us to see spreads and outliers among all of our independent variables and help us a get a better feel for the data.
+
 # Correlation Matrix
 
 Here, I created a correlation matrix heatmap showing the correlation between each variable.
 
 ![Figure](https://raw.githubusercontent.com/cambutler33/my386blog/main/assets/images/GolfPicCorr.png)
 
-Insights.
-We notice that both average score and putts per hole have a negative correlation for earnings for year. This makes sense, have a lower score and putt less and you'll most likely make more money since those are good attributes for golf. However, it is shocking to see that driving accuracy has a negative correlation with earnings per year. This means that driving accuracy does not play a huge part in distinguishing golfers who make more money and those who don't make very much. 
+Notice that both average score and putts per hole have a negative correlation for earnings for year. This makes sense, have a lower score and putt less and you'll most likely make more money since those are good attributes for golf. However, it is shocking to see that driving accuracy has a negative correlation with earnings per year. This means that driving accuracy does not play a huge part in distinguishing golfers who make more money and those who don't make very much. 
 
-Besides wins, the variable that is the highest correlated with earnings per year is birdies per round. For those who don't know, a birdie is when you shoot 1-under par on a given hole. In other words, that is a good hole and golfers want the most birdies as possible (or better). If you can consistently get birdies, you have a shot at making some good bucks throughout the year. You don't have to drive the ball the furthest, you just have to get it on the green and make birdies.
+Besides wins, the variable that has the highest correlation with earnings per year is birdies per round. For those who don't know, a birdie is when you shoot 1-under par on a given hole. In other words, that is a good hole and golfers want the most birdies (or better) as possible. If you can consistently get birdies, you have a shot at making some good bucks throughout the year. You don't have to drive the ball the furthest, you just have to get it on the green and make birdies.
 
 The code for how to create the heatmap is contained in the GitHub repo.
 
 # Conclusion
 
-To wrap up, we narrowed it down to birdies helping golfers making the most money over other attributes such as average driving distance. 
+To wrap up, we narrowed it down to birdies as what may help golfers make the most money in a year on the PGA Tour over other attributes such as average driving distance. 
 
 In the next post, I will wrap up this project and conclude with all of my findings. Thanks for reading! Stay tuned!
-
-![Figure](https://raw.githubusercontent.com/esnt/my386blog/main/assets/images/default.jpg)
