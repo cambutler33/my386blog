@@ -3,7 +3,7 @@ layout: post
 title:  "Golf Earnings Project- Part 2: EDA"
 author: Cameron Butler
 description: Overview of exploratory data analysis steps for Golf Earnings Data Project.
-image: /assets/images/blog-image.jpg
+image: /assets/images/golfcover.png
 ---
 
 # Introduction 
@@ -63,11 +63,7 @@ sns.boxplot(ax=axes[7], data=df, y='Birdies Per Round');
 
 Now let's look at these boxplots.
 
-![Figure](https://raw.githubusercontent.com/cambutler33/my386blog/main/assets/images/GolfPic7.png)
-
-![Figure](https://raw.githubusercontent.com/cambutler33/my386blog/main/assets/images/GolfPic8.png)
-
-![Figure](https://raw.githubusercontent.com/cambutler33/my386blog/main/assets/images/GolfPic9.png)
+![Figure](https://raw.githubusercontent.com/cambutler33/my386blog/main/assets/images/GolfPic12.png)
 
 ![Figure](https://raw.githubusercontent.com/cambutler33/my386blog/main/assets/images/GolfPic11.png)
 
