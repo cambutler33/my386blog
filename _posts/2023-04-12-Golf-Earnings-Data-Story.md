@@ -32,6 +32,5 @@ Graphic
 
 # GitHub Link
 
-The complete code and data can be found in the following Github repo:
+The complete code and data can be found in the following Github repo:  
 https://github.com/cambutler33/Golf_Earnings
-MAKE IT A LINK
