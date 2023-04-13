@@ -3,7 +3,7 @@ layout: post
 title:  "Golf Earnings Project- Part 3: Data Story"
 author: Cameron Butler
 description: Culmination of PGA Golf Earnings Data Project
-image: /assets/images/golfcover.png
+image: /assets/images/golf3.png
 ---
 
 # Recap
@@ -25,8 +25,6 @@ To wrap up, we narrowed it down to birdies as what may help golfers make the mos
 # Data Story
 
 1 paragraph
-
-Graphic
 
 ![Figure](https://raw.githubusercontent.com/cambutler33/my386blog/main/assets/images/DataStory.png)
 
