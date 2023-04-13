@@ -22,5 +22,4 @@ After performing an analysis on the scraped dataset, I found that besides wins, 
 
 # Repo Link
 
-The complete code and data can be found in the following Github repo:  
-[(https://github.com/cambutler33/Golf_Earnings)]
+The complete code and data can be found in this [Github repo](https://github.com/cambutler33/Golf_Earnings).
