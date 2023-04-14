@@ -10,7 +10,7 @@ image: /assets/images/golf3.png
 
 For a little context regarding this project, professional golfers are able to make more money on the PGA Tour than ever before. A golfer's season earnings are dependent on their success-- win more (of the more popular tournaments) and make more money. Throughout this project, I wanted to see what factors contribute most to golfers winning the most money during a season on the PGA Tour. Examples of attributes that were considered were driving distance, driving accuracy, putts per hole, birdies per round, etc. 
 
-In parts 1 and 2, I showed how to both scrape and compile the data, and I performed an exploratory data analysis, respectively. I looked at the top 50 golfers for the past 5 complete years on the PGA Tour for this project. The data came from ESPN.
+In parts 1 and 2, I showed how to both [scrape and compile the data](https://cambutler33.github.io/my386blog/2023/03/14/Golf-Earnings-Project.html), and I [performed an exploratory data analysis](https://cambutler33.github.io/my386blog/2023/03/29/Golf-Earnings-EDA.html), respectively. I looked at the top 50 golfers for the past 5 complete years on the PGA Tour for this project. The data [came from ESPN](https://www.espn.com/golf/stats/player/_/season/2022).
 
 # Findings
 
